@@ -28,13 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.hgGrid1 = new HGGrid.HGGrid();
+            this.SuspendLayout();
+            // 
+            // hgGrid1
+            // 
+            this.hgGrid1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hgGrid1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.hgGrid1.Location = new System.Drawing.Point(12, 12);
+            this.hgGrid1.Name = "hgGrid1";
+            this.hgGrid1.Size = new System.Drawing.Size(776, 426);
+            this.hgGrid1.Sytle = null;
+            this.hgGrid1.TabIndex = 0;
+            this.hgGrid1.Table = null;
+            this.hgGrid1.ViewStyle = HGGrid.HGGridViewStyle.Excel2016;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.hgGrid1);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private HGGrid.HGGrid hgGrid1;
     }
 }
 
