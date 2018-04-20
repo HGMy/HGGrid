@@ -7,6 +7,8 @@ namespace HGGrid
     public enum HGGridViewStyle
     {
         Default,
+        Excel2007,
+        Excel2013,
         Excel2016
     }
 }
