@@ -11,22 +11,19 @@ namespace HGGrid
 
         public int Index { get; internal set; }
 
-        private HGGridCellCollection _cells;
-        public HGGridCellCollection Cells
-        {
-            get
-            {
-                return _cells;
-            }
-        }
+        private HGGridCell _header;
+
+        private List<HGGridCell> _cells;
 
 
         public HGGridStyle Sytle { get; set; }
-
+        public HGGridCell Header { get => _header;  }
+        public List<HGGridCell> Cells { get => _cells;  }
 
         internal HGGridRow ()
         {
-            _cells = new HGGridCellCollection();
+            _header = new HGGridCell();
+            _cells = new List<HGGridCell>();
         }
     }
 

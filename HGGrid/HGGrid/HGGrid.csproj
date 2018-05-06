@@ -38,19 +38,55 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HGGrid.cs">
+    <Compile Include="Grid\Behavior.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="HGGridCell.cs" />
-    <Compile Include="HGGridCollection.cs" />
+    <Compile Include="Grid\Const.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\Data.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\Draw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\HGGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cells\HGGridCell.cs" />
     <Compile Include="Columns\HGGridColumn.cs" />
     <Compile Include="Columns\HGGridComboBoxColumn.cs" />
+    <Compile Include="Grid\Keyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\Mouse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\Scrolls.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Grid\Style.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Rows\HGGridRow.cs" />
-    <Compile Include="HGGridStyle.cs" />
+    <Compile Include="Grid\Excel2016Style.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Style\HGGridStyle.cs" />
     <Compile Include="Columns\HGGridTextboxColumn.cs" />
-    <Compile Include="HGGridViewStyle.cs" />
+    <Compile Include="Grid\HGGridViewStyle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Cursors\" />
+    <Folder Include="Win32\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Grid\HGGrid.resx">
+      <DependentUpon>HGGrid.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
