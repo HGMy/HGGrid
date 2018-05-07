@@ -22,7 +22,8 @@ namespace HGGrid
             _hScrollBar.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Bottom;
             _hScrollBar.ValueChanged += (a, e) =>
             {
-                Refresh();
+                //Refresh();
+                DrawGrid(Graphics.FromHwnd(_clientArea.Handle));
             };
 
 
@@ -34,7 +35,8 @@ namespace HGGrid
             _vScrollBar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Right;
             _vScrollBar.ValueChanged += (a, e) =>
             {
-                Refresh();
+                //Refresh();
+                DrawGrid(Graphics.FromHwnd(_clientArea.Handle));
             };
 
             SetScrollBarStatus();

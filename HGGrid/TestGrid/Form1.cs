@@ -45,7 +45,7 @@ namespace TestGrid
             hgGrid1.Table = table;
             hgGrid1.UpdateData();
             TimeSpan ts = DateTime.Now - dtn;
-            MessageBox.Show(ts.TotalSeconds.ToString("0.##") + "s");
+            //MessageBox.Show(ts.TotalSeconds.ToString("0.##") + "s");
         }
     }
 }
